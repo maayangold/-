@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="styles/game.css" >
     <title>4 in a Row</title>
 
 </head>
 <body>
     <h1>ארבע בשורה</h1>
-    <div id="player"> </div>
+    <div id="player" class="player1"></div>
     <div id="board"></div>
-    <div id="overlay-text"></div>
-    <div id="overlay"></div>
     
-<video id="fireworks-video" src="fireworks-video.svg" ></video>
-    <script src="script.js"></script>
+    <audio id="fall" src="audio/chimes.WAV"></audio>
+    <audio id="end" src="audio/tada.WAV"></audio>
+    <div id="overlay">
+        <div>
+            🎉  !!!כל הכבוד! <span id="winner"></span> ניצח/ה🎉<br>
+        </div>
+    </div>
+    
+    </div>
+    <script src="scripts/game.js"></script>
 
 </body>
 </html>
