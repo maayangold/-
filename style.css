@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+#player{
+    color: black;
+    font-size: 30px;;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 5px;
+    color: blue;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 10px solid rgb(9, 9, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+}
+
+.cell.bottom-row {
+   
+    border-bottom: 30px solid rgb(9, 9, 143); /* שינוי עובי המסגרת התחתונה */
+}
